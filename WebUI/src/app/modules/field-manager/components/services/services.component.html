@@ -1,0 +1,18 @@
+<h2 class="d-inline">Meus Serviços</h2>
+<button mat-raised-button color="primary" class="float-end">Novo Serviço</button>
+
+<mat-tab-group mat-align-tabs="end" class="mt-3">
+    <mat-tab label="Em Aberto">
+        <app-services-table [services]="open" (onSelectService)="displayService($event)"></app-services-table>
+    </mat-tab>
+    <mat-tab label="Finalizados">
+        <app-services-table [services]="history" (onSelectService)="displayService($event)"></app-services-table>
+    </mat-tab>
+</mat-tab-group>
+  
+<mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer class="drawer-sidenav" mode="side">
+        <app-view-service *ngIf="selectedService && selectedService.completed" [service]="selectedService" (onClose)="closeService()"></app-view-service>
+        <app-schedule-service *ngIf="selectedService && !selectedService.completed" [service]="selectedService" (onClose)="closeService()" (onScheduled)="displayServiceScheduledConfirmation()"></app-schedule-service>
+    </mat-drawer>
+</mat-drawer-container>

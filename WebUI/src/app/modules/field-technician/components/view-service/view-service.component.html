@@ -1,0 +1,39 @@
+<div *ngIf="service" class="drawer-content">
+    <h3 class="d-inline">Serviço #{{service.serviceGuid}}</h3>
+    <button type="button" class="btn-close float-end mb-4" aria-label="Close" (click)="closeService()"></button>      
+
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Título</mat-label>
+      <input matInput [value]="service.title" readonly required>
+    </mat-form-field>      
+     <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Chamado</mat-label>
+      <input matInput [value]="service.request.requestGuid" readonly required>
+    </mat-form-field>      
+     <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Endereço</mat-label>
+      <input matInput [value]="service.address" readonly required>
+    </mat-form-field>      
+     <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Técnico Responsável</mat-label>        
+      <input matInput value="{{service.assignee?.technicianGuid}} - {{service.assignee?.user?.username}}" readonly required>
+    </mat-form-field>
+     <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Agendado Para</mat-label>
+      <input matInput [value]="service.scheduled | date:'dd/MM/yyyy'" readonly required>
+    </mat-form-field>      
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Detalhes do Chamado</mat-label>
+      <textarea [(ngModel)]="service.request.body" matInput rows="10" readonly></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="w-100">
+      <mat-label>Detalhes da Resolução</mat-label>
+      <textarea [(ngModel)]="service.response" matInput rows="10" required></textarea>
+    </mat-form-field>
+    
+    <div class="w-100 pb-1 text-end">
+        <button mat-raised-button style="margin-right: 1rem;" (click)="closeService()">Cancelar</button>
+        <button *ngIf="!service?.completed" mat-raised-button color="primary" (click)="completeService(service)">Finalizar</button>
+        <button *ngIf="service?.completed" mat-raised-button color="primary" (click)="completeService(service)">Atualizar</button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "ConnectionString": "Data Source=XLT88P18;Initial Catalog=Orion_Tests;Integrated Security=True;ConnectRetryCount=0;MultipleActiveResultSets=True",
+  "LogFolder": "log/", // Relative path.
+  "LogFileName": "LG.log", // Only used by JulianLogger.
+  "LogTable": "Log", // Only used by DatabaseLogger. If null or empty, "Log" will be assumed as the default table name.
+  "SenderEmailAddress": "CS_Dev@scotiabank.com",
+  "SMTPHost": "mailrelay.bns",
+  "SMTPPort": 25
+}

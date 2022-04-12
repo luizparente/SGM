@@ -1,0 +1,9 @@
+<h2 class="d-inline">Meus Serviços</h2>
+<mat-radio-group aria-label="Selecione o formato de visualização" class="float-end mt-1">
+    <mat-radio-button value="1" [checked]="true" style="margin-right: 1rem;">Mapa</mat-radio-button>
+    <mat-radio-button value="2" [disabled]="true">Calendário</mat-radio-button>
+</mat-radio-group>
+
+<div class="mb-3"></div>
+
+<app-service-map [services]="services"></app-service-map>

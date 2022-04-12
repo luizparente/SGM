@@ -1,0 +1,27 @@
+<h2 class="d-inline">Meus Chamados</h2>
+<button mat-raised-button color="primary" class="float-end" (click)="createRequest()">Novo Chamado</button>
+
+<mat-tab-group mat-align-tabs="end" class="mt-3">
+  <!-- <mat-tab label="Todos">
+    <div class="tab-content">
+      <app-requests-table [requests]="requests" (onSelectRequest)="displayRequest($event)"></app-requests-table>
+    </div>
+  </mat-tab> -->
+  <mat-tab label="Em Aberto">
+    <div class="tab-content">
+      <app-requests-table [requests]="open" (onSelectRequest)="displayRequest($event)"></app-requests-table>
+    </div>
+  </mat-tab>
+  <mat-tab label="Finalizados">
+    <div class="tab-content">
+      <app-requests-table [requests]="closed" (onSelectRequest)="displayRequest($event)"></app-requests-table>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<mat-drawer-container class="drawer-container">
+  <mat-drawer #drawer class="drawer-sidenav" mode="side">
+    <app-view-request *ngIf="selectedRequest && !newRequest" [selectedRequest]="selectedRequest" (onClose)="closeRequest()"></app-view-request>
+    <app-new-request *ngIf="newRequest && !selectedRequest" [newRequest]="newRequest" (onClose)="discardRequestDraft()" (onCreate)="displayRequestCreatedConfirmation()"></app-new-request>
+  </mat-drawer>
+</mat-drawer-container>

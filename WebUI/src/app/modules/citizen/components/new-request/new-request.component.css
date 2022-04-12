@@ -1,0 +1,23 @@
+.drawer-content {
+    overflow: hidden !important;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mat-form-field {
+    width: 100% !important;
+}
+
+.button-row {
+    width: 100%;
+    text-align: right;
+    display: table-cell;
+}
+
+button {
+    margin-left: 1rem;
+}

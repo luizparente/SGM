@@ -1,0 +1,81 @@
+<nav class="navbar navbar-expand-lg navbar-dark p-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink=""><img src="/assets/img/branding/logo.png"/> Prefeitura de Luizlandia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li *ngIf="isFieldDispatcher" class="nav-item"><a class="nav-link" routerLink="services">Gerenciar Serviços</a></li>
+                <li *ngIf="isFieldTechnician" class="nav-item"><a class="nav-link" routerLink="my-services">Meus Serviços</a></li>
+                <li *ngIf="isCitizen || !user" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cidadão
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Cultura</a></li>
+                        <li><a class="dropdown-item" href="#">Esporte e Lazer</a></li>
+                        <li><a class="dropdown-item" href="#">IPTU e ITR</a></li>
+                        <li><a class="dropdown-item" href="#">Programas Sociais</a></li>
+                        <li><a class="dropdown-item" href="#">Segurança</a></li>
+                        <li><a class="dropdown-item" href="#">Serviços Públicos</a></li>
+                        <hr/>
+                        <li><a class="dropdown-item" routerLink="requests">Criar Solicitação</a></li>
+                    </ul>
+                </li>
+                <li *ngIf="isCitizen || !user" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Empresa
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Abertura de Empresas</a></li>
+                        <li><a class="dropdown-item" href="#">Alvarás, Certidões e Licenças</a></li>
+                        <li><a class="dropdown-item" href="#">Cadastros</a></li>
+                        <li><a class="dropdown-item" href="#">Consultas</a></li>
+                        <li><a class="dropdown-item" href="#">Empreendedorismo</a></li>
+                        <li><a class="dropdown-item" href="#">Legislação</a></li>
+                    </ul>
+                </li>
+                <li *ngIf="isCitizen || !user" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Turista
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Compras</a></li>
+                        <li><a class="dropdown-item" href="#">Eventos</a></li>
+                        <li><a class="dropdown-item" href="#">Gastronomia</a></li>
+                        <li><a class="dropdown-item" href="#">Hotelaria</a></li>
+                        <li><a class="dropdown-item" href="#">Lazer</a></li>
+                        <li><a class="dropdown-item" href="#">Roteiros</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Accessibilidade
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" id="toggle-dark-theme">Alternar modo escuro</a></li>
+                    </ul>
+                </li>
+                <li *ngIf="!user" class="nav-item">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+                <li *ngIf="user" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Olá, {{ user.username }}!
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Minha Conta</a></li>
+                        <li><a class="dropdown-item" (click)="logOut()">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

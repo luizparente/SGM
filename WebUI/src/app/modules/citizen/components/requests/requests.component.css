@@ -1,0 +1,28 @@
+.tab-content {
+    margin-top: 1rem;
+}
+
+.drawer-container {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+  
+.drawer-sidenav {
+    padding: 2rem;
+    min-width: 600px;
+}
+
+@media (max-width: 599px) {
+    .drawer-container {
+        max-width: 100%;
+    }
+    .text-break {
+        max-width: 50vw;
+    }
+    .drawer-sidenav {
+        min-width: 300px;
+    }
+}

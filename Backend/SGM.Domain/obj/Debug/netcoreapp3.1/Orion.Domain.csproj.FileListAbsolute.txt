@@ -1,0 +1,16 @@
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.csprojAssemblyReference.cache
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.AssemblyInfoInputs.cache
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.AssemblyInfo.cs
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\orionsettings.json
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Domain.deps.json
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Domain.runtimeconfig.json
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Domain.runtimeconfig.dev.json
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Domain.dll
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Domain.pdb
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Utilities.dll
+C:\Projects\Orion\Orion.Domain\bin\Debug\netcoreapp3.1\Orion.Utilities.pdb
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.csproj.CopyComplete
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.dll
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.pdb
+C:\Projects\Orion\Orion.Domain\obj\Debug\netcoreapp3.1\Orion.Domain.genruntimeconfig.cache

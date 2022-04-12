@@ -1,0 +1,30 @@
+<div class="card m-auto mt-5" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center">Login</h5>
+      <hr/>
+
+      <form>
+        <mat-form-field class="w-100" appearance="fill">
+          <mat-label>CPF</mat-label>
+          <input type="text" matInput [formControl]="loginForm" placeholder="Ex. 123.456.789-01" [(ngModel)]="username" required>
+          <mat-error *ngIf="loginForm.hasError('required')">
+            Digite seu <strong>CPF</strong>
+          </mat-error>
+        </mat-form-field>
+        
+        <mat-form-field class="w-100 mt-2" appearance="fill">
+          <mat-label>Senha</mat-label>
+          <input type="password" matInput [formControl]="loginForm" placeholder="Sua senha" [(ngModel)]="password" required>
+          <mat-error *ngIf="loginForm.hasError('required')">
+            Digite sua <strong>senha</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="primary" class="mt-3" (click)="onSubmit()">Entrar</button>
+      </form>
+
+      <hr class="mt-4"/>
+      <p class="text-center m-0"><a  class="card-link">Esqueci minha senha</a></p>
+      <p class="text-center m-0"><a  class="card-link">Criar nova conta</a></p>
+    </div>
+  </div>

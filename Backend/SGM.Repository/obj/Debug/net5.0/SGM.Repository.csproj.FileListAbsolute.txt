@@ -1,0 +1,5 @@
+D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Repository\obj\Debug\net5.0\SGM.Repository.csproj.AssemblyReference.cache
+D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Repository\obj\Debug\net5.0\SGM.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Repository\obj\Debug\net5.0\SGM.Repository.AssemblyInfoInputs.cache
+D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Repository\obj\Debug\net5.0\SGM.Repository.AssemblyInfo.cs
+D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Repository\obj\Debug\net5.0\SGM.Repository.csproj.CoreCompileInputs.cache

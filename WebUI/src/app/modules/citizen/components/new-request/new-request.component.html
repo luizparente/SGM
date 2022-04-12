@@ -1,0 +1,41 @@
+<div *ngIf="newRequest" class="drawer-content">
+    <h3 class="d-inline">Novo Chamado #{{newRequest.requestGuid}}</h3>  
+    <button type="button" class="btn-close float-end" aria-label="Close" (click)="discardRequestDraft()"></button>
+    
+    <div class="form-container mt-3">
+        <mat-form-field *ngIf="user" appearance="fill">
+            <mat-label>Autor</mat-label>
+            <input matInput [value]="user.username" readonly>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Assunto</mat-label>
+            <input type="text" matInput [(ngModel)]="newRequest.header" [formControl]="newRequestForm" ngDefaultControl required>
+        </mat-form-field>    
+        <mat-form-field appearance="fill">
+            <mat-label>Endereço</mat-label>
+            <input type="text" matInput [(ngModel)]="newRequest.address" [formControl]="newRequestForm" ngDefaultControl required>
+        </mat-form-field>    
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo</mat-label>
+            <mat-select [(ngModel)]="newRequest.category" [formControl]="newRequestForm" ngDefaultControl required>
+                <mat-option selected disabled>Tipo</mat-option>
+                <mat-option value="Espaços Públicos">Espaços Públicos</mat-option>
+                <mat-option value="Iluminação Pública">Iluminação Pública</mat-option>
+                <mat-option value="Arborização Urbana">Arborização Urbana</mat-option>
+                <mat-option value="Segurança Pública">Segurança Pública</mat-option>
+                <mat-option value="Saneamento Básico">Saneamento Básico</mat-option>
+                <mat-option value="Saúde Pública">Saúde Pública</mat-option>
+                <mat-option value="Outro">Outro</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Detalhes</mat-label>
+            <textarea matInput rows="15" [(ngModel)]="newRequest.body" [formControl]="newRequestForm" ngDefaultControl required></textarea>
+        </mat-form-field>    
+        
+        <div class="button-row">
+            <button mat-raised-button (click)="discardRequestDraft()">Cancelar</button>
+            <button mat-raised-button color="primary" (click)="createRequest(newRequest)" [disabled]="!isFormValid">Enviar</button>
+        </div>
+    </div> 
+</div>
