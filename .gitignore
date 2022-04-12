@@ -3,3 +3,16 @@
 ################################################################################
 
 /.vs
+/Backend/.vs
+/Backend/SGM.Application/bin
+/Backend/SGM.Application/obj
+/Backend/SGM.Domain/bin/
+/Backend/SGM.Domain/obj/
+/Backend/SGM.Repository/bin
+/Backend/SGM.Repository/obj
+/Backend/SGM.Service/bin
+/Backend/SGM.Service/obj
+/Backend/SGM.Utilities/bin
+/Backend/SGM.Utilities/obj
+/Backend/SGM.WebAPI/bin
+/Backend/SGM.WebAPI/obj
