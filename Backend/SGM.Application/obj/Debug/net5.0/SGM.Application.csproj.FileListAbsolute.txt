@@ -1,5 +1,0 @@
-D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Application\obj\Debug\net5.0\SGM.Application.csproj.AssemblyReference.cache
-D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Application\obj\Debug\net5.0\SGM.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Application\obj\Debug\net5.0\SGM.Application.AssemblyInfoInputs.cache
-D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Application\obj\Debug\net5.0\SGM.Application.AssemblyInfo.cs
-D:\MyData\_Engineering\Software Engineering\PUC\013. TCC\000. Implementation\Backend\SGM.Application\obj\Debug\net5.0\SGM.Application.csproj.CoreCompileInputs.cache
